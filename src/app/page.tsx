@@ -1,4 +1,5 @@
 "use client";
+import { Characters } from "@/components/characters";
 import { Header } from "@/components/header";
 import { MyHome } from "@/components/home";
 import { useState } from "react";
@@ -16,6 +17,7 @@ export default function Home() {
       <div className=" min-h-screen bg-slate-50 dark:bg-slate-950">
         <Header {...headerProps} />
         <MyHome />
+        <Characters />
       </div>
     </main>
   );

@@ -98,10 +98,12 @@ const Header = ({ dark, setDark }: HeaderProps) => {
   };
 
   return (
-    <Container>
-      <HeaderHamburger {...props} />
-      <HeaderDefault {...props} />
-    </Container>
+    <div className="sticky top-0 left-0 bg-slate-50 dark:bg-slate-950">
+      <Container>
+        <HeaderHamburger {...props} />
+        <HeaderDefault {...props} />
+      </Container>
+    </div>
   );
 };
 
