@@ -2,6 +2,7 @@
 import { Characters } from "@/components/characters";
 import { Header } from "@/components/header";
 import { MyHome } from "@/components/home";
+import { Text } from "@/components/text";
 import { useState } from "react";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <Header {...headerProps} />
         <MyHome />
         <Characters />
+        <Text />
       </div>
     </main>
   );
