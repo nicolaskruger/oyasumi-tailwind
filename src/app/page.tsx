@@ -1,6 +1,6 @@
 "use client";
 import { Header } from "@/components/header";
-import Image from "next/image";
+import { MyHome } from "@/components/home";
 import { useState } from "react";
 
 export default function Home() {
@@ -15,6 +15,7 @@ export default function Home() {
     <main className={`${(dark && "dark") || ""} `}>
       <div className=" min-h-screen bg-slate-50 dark:bg-slate-950">
         <Header {...headerProps} />
+        <MyHome />
       </div>
     </main>
   );
